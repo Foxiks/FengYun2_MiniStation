@@ -1,0 +1,12 @@
+{
+    "driver": "hackrf=0",
+    "amp": 14,
+    "lna": 40,
+    "vga": 20,
+    "udp_frames_port": 16384,
+    "rx_freq": 1687500000,
+    "out_path": "/user/home/Documents/FengYun2-Images/",
+    "costas_loop_bw": 0.002,
+    "samp_rate_rx": 2000000,
+    "threshold": 7
+}
