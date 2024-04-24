@@ -75,9 +75,9 @@ ExecStart=/home/user/.../FengYun2_MiniStation/fengyun2_ministation.sh
 [Install]
 WantedBy=multi-user.target
 ```
-Сhange the path to the sh script!
+___Сhange the path to the sh script!___
 
-2. Сhange the path to the py3 script in ```sudo nano fengyun2_ministation.sh```!
+2. ___Сhange the path to the py3 script in___ ```sudo nano fengyun2_ministation.sh```!
 ```
 #!/bin/bash
 #
