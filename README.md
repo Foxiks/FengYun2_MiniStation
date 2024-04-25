@@ -35,7 +35,7 @@ sudo apt-get update
 sudo apt-get install gr-satellites
 ```
 
-Install the GNURadio [gr-FengYun2](github.com/Foxiks/gr-FengYun2) block extension package:
+Install the GNURadio [gr-FengYun2](https://github.com/Foxiks/gr-FengYun2) block extension package:
 ```
 git clone https://github.com/Foxiks/gr-FengYun2.git
 cd gr-FengYun2
