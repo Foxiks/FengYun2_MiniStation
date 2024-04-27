@@ -10,16 +10,16 @@ class FengYun2_MiniStation_Runner:
 
     def run_gnuradio_script(self) -> None:
         self.process = subprocess.Popen(['python3', f'{sys.argv[1]}FengYun2_Demodulator.py',
-                                         '--driver', self.params.driver,
-                                         '--amp', self.params.amp,
-                                         '--vga', self.params.vga,
-                                         '--lna', self.params.lna,
-                                         '--udp-frames-port', self.params.udp_frames_port,
-                                         '--rx-freq', self.params.rx_freq,
-                                         '--out-path', self.params.out_path,
-                                         '--costas-loop-bw', self.params.costas_loop_bw,
-                                         '--samp-rate-rx', self.params.samp_rate_rx,
-                                         '--threshold', self.params.threshold])
+                                         '--driver', f'{self.params.driver}',
+                                         '--amp', f'{self.params.amp}',
+                                         '--vga', f'{self.params.vga}',
+                                         '--lna', f'{self.params.lna}',
+                                         '--udp-frames-port', f'{self.params.udp_frames_port}',
+                                         '--rx-freq', f'{self.params.rx_freq}',
+                                         '--out-path', f'{self.params.out_path}',
+                                         '--costas-loop-bw', f'{self.params.costas_loop_bw}',
+                                         '--samp-rate-rx', f'{self.params.samp_rate_rx}',
+                                         '--threshold', f'{self.params.threshold}'])
         self.pid = self.process.pid
         return
 
