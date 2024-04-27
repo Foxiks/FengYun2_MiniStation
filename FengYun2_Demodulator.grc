@@ -278,7 +278,6 @@ blocks:
     coordinate: [1272, 20.0]
     rotation: 0
     state: enabled
-- name: network_udp_sink_0
 - name: osmosdr_source_0
   id: osmosdr_source
   parameters:
