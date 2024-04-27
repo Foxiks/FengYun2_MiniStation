@@ -21,11 +21,11 @@ sudo apt-get install gnuradio python3-packaging
 
 Install some additional packages via apt:
 ```
-sudo apt-get install libjpeg-dev zlib1g-dev gcc build-essential libffi-dev python3-dev python3-cffi python3-opencv python3-pip git cmake libusb-1.0-0-dev libboost-all-dev gnuradio-dev liblog4cpp5-dev swig
+sudo apt-get install libjpeg-dev zlib1g-dev gcc build-essential libffi-dev python3-dev python3-cffi python3-opencv python3-pip git cmake libusb-1.0-0-dev libboost-all-dev gnuradio-dev liblog4cpp5-dev swig gr-osmosdr
 ```
 ...and via pip:
 ```
-python3 -m pip install hexhamming construct Pillow
+python3 -m pip install hexhamming construct Pillow psutil
 ```
 
 Install the GNURadio [gr-Satellites](https://gr-satellites.readthedocs.io/en/latest/installation_intro.html) block extension package:
@@ -81,7 +81,7 @@ ___Сhange the path to the sh script!___
 ```
 #!/bin/bash
 #
-python3 /home/user/.../FengYun2_MiniStation/FengYun2_MiniStation_Runner.py # <- Change path!
+python3 /home/user/.../FengYun2_MiniStation/FengYun2_MiniStation_Runner.py  /home/user/.../FengYun2_MiniStation/settings.json# <- Change path!
 ```
 
 3. Set file permission:
