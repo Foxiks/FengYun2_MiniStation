@@ -279,25 +279,6 @@ blocks:
     rotation: 0
     state: enabled
 - name: network_udp_sink_0
-  id: network_udp_sink
-  parameters:
-    addr: 127.0.0.1
-    affinity: ''
-    alias: ''
-    comment: ''
-    header: '0'
-    payloadsize: int(354848/8)
-    port: '2000'
-    send_eof: 'False'
-    type: byte
-    vlen: '1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1136, 380.0]
-    rotation: 0
-    state: disabled
 - name: osmosdr_source_0
   id: osmosdr_source
   parameters:
@@ -790,7 +771,6 @@ connections:
 - [digital_costas_loop_cc_0, '0', digital_clock_recovery_mm_xx_0, '0']
 - [fengyun2_diff_decoder_0, '0', fengyun2_sync_derand_0, '0']
 - [fengyun2_sync_derand_0, '0', fengyun2_decoder_0, '0']
-- [fengyun2_sync_derand_0, '0', network_udp_sink_0, '0']
 - [osmosdr_source_0, '0', dc_blocker_xx_0, '0']
 - [root_raised_cosine_filter_0, '0', digital_costas_loop_cc_0, '0']
 
