@@ -81,7 +81,8 @@ ___Сhange the path to the sh script!___
 ```
 #!/bin/bash
 #
-python3 /home/user/.../FengYun2_MiniStation/FengYun2_MiniStation_Runner.py  /home/user/.../FengYun2_MiniStation/settings.json# <- Change path!
+python3 /home/user/.../FengYun2_MiniStation/FengYun2_MiniStation_Runner.py  /home/user/.../FengYun2_MiniStation/ 
+# ^- Change path /home/user/.../FengYun2_MiniStation/!
 ```
 
 3. Set file permission:

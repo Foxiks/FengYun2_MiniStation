@@ -1,15 +1,15 @@
-import time, subprocess, signal, psutil
+import time, subprocess, signal, psutil, sys
 from FengYun2_MiniStation_Parameters_Loader import loader
 
 class FengYun2_MiniStation_Runner:
     def __init__(self) -> None:
         self.state=False
-        self.params=loader(settings_file='settings.json')
+        self.params=loader(settings_file=f'{sys.argv[1]}settings.json')
         self.main()
         pass
 
     def run_gnuradio_script(self) -> None:
-        self.process = subprocess.Popen(['python3', 'FengYun2_Demodulator.py',
+        self.process = subprocess.Popen(['python3', f'{sys.argv[1]}FengYun2_Demodulator.py',
                                          '--driver', self.params.driver,
                                          '--amp', self.params.amp,
                                          '--vga', self.params.vga,
